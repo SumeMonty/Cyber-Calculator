@@ -1,6 +1,7 @@
 #include<stdio.h>                                               //π
 #include<conio.h>
 #include<math.h>
+#include<windows.h>
 #define pi 22/7
 
 int main()
@@ -28,26 +29,31 @@ int main()
         switch(j)
         {
 
-            case 1:
-                    printf("Enter two numbers:\n");
-                    scanf("%d%d", &a, &b);
-                    printf("\nSum Of %d And %d = %d\n", a, b, (a+b));
-                    break;
-            case 2:
-                    printf("Enter two numbers:\n");
-                    scanf("%d%d", &a, &b);
-                    printf("\nDifference Between %d And %d = %d\n", a, b, (a-b));
-                    break;
-            case 3:
-                    printf("Enter two numbers:\n");
-                    scanf("%d%d", &a, &b);
-                    printf("\nProduct Of %d And %d = %d\n", a, b, (a*b));
-                    break;
-            case 4:
-                    printf("Enter two numbers:\n");
-                    scanf("%d%d", &a, &b);
-                    printf("\nQuotient=%d\n", (a/b));
-                    printf("\nRemainder=%d\n", (a%b));  
+                case 1:
+                        printf("Enter two numbers:\n");
+                        scanf("%d%d", &a, &b);
+                        printf("\nSum Of %d And %d = %d\n", a, b, (a+b));
+                        break;
+                case 2:
+                        printf("Enter two numbers:\n");
+                        scanf("%d%d", &a, &b);
+                        printf("\nDifference Between %d And %d = %d\n", a, b, (a-b));
+                        break;
+                case 3:
+                        printf("Enter two numbers:\n");
+                        scanf("%d%d", &a, &b);
+                        printf("\nProduct Of %d And %d = %d\n", a, b, (a*b));
+                        break;
+                case 4:
+                        printf("Enter two numbers:\n");
+                        scanf("%d%d", &a, &b);
+                        printf("\nQuotient=%f\n", (float (a/b)));
+                        printf("\nRemainder=%d\n", (a%b));  
+                        break;
+    
+                default: 
+                        MessageBox(0,"Please Choose A Valid Option","Error",1);   
+                        main();     
         }                          
     }
 
@@ -58,6 +64,7 @@ int main()
         float a;
         float x;
         double b;
+        double base, power;
         double result;
 
 
@@ -68,6 +75,7 @@ int main()
         printf("5.Finding The Common Log Of A Number(Base = '10')\n\n");
         printf("6.Multiplication Of A Number 'x' With 'pi(π)'....'x*π'\n\n");
         printf("7.Division Of A Number 'x' By 'pi(π)'....'x/π'\n\n");
+        printf("8.Find The Value Of A Number Raised To The Power Of Another\n\n");
         scanf("%d", &j);
 
         switch(j)
@@ -107,16 +115,29 @@ int main()
                         break;
 
                 case 6:
-                        printf("Enter The Number 'x' To Be Multiplied With 'π'");
+                        printf("Enter The Number 'x' To Be Multiplied With 'π'\n");
                         scanf("%f", &x);
                         printf("The Value Of (%.2f * π) = %f", x, (x*pi));
                         break;        
 
                 case 7:
-                        printf("Enter The Number 'x' To Be Divided By 'π'");
+                        printf("Enter The Number 'x' To Be Divided By 'π'\n");
                         scanf("%f", &x);
-                        printf("The Value Of (%.2f / π) = %f", x, (x/pi));        
-                        
+                        printf("The Value Of (%.2f / π) = %f", x, (x/pi));
+                        break;
+
+                case 8:
+                        printf("Enter The Value Of Base\n");
+                        scanf("%lf", &base);
+                        printf("Enter The Value Of Power\n");
+                        scanf("%lf", &power);
+                        result = pow(base,power);
+                        printf("The Value Of %.2lf Raised To To The Power Of %.2lf = %.2lf", base, power, result);
+                        break;
+
+                default:
+                        MessageBox(0,"Please Enter A Valid Option","Error",1);
+                        main();                        
         }                       
                             
     }
