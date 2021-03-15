@@ -6,22 +6,50 @@
 
 int main()
 {
+
+    void basic();
+    void scientific();
+    void matrix();
     int i;
     printf("Select A Type Of Calculator:-\n");
 
     printf("1.Basic Calculator('+','-','*','/')\n\n");
 
     printf("2.Scientific Calculator\n\n");
+
+    printf("3.Matrix Calculator\n\n");
     scanf("%d", &i);
 
     if(i==1)
     {                           //Basic Calculator
+       basic();
+    }
+
+
+    if(i==2)
+    {                                           //Scientific Calculator.
+       scientific();
+    }
+
+    if(i==3)
+    {
+       matrix();
+    }
+    getch();
+}
+
+
+/***********************************************************************************************************************************************************/
+
+
+void basic()
+{
         int j;
         int a, b;
 
         printf("1.Addition Of Two Integers\n");
         printf("2.Subtraction Between Two Integers\n");
-        printf("3.Multiplicaion Between Two Integers\n");
+        printf("3.Multiplication Between Two Integers\n");
         printf("4.Division Of Two Integers\n");
         scanf("%d", &j);
         printf("\n\n");
@@ -47,19 +75,22 @@ int main()
                 case 4:
                         printf("Enter two numbers:\n");
                         scanf("%d%d", &a, &b);
-                        printf("\nQuotient=%f\n", (float (a/b)));
-                        printf("\nRemainder=%d\n", (a%b));  
+                        printf("\nQuotient=%f\n", (float) a/b);
+                        printf("\nRemainder=%d\n", (a%b));
                         break;
-    
-                default: 
-                        MessageBox(0,"Please Choose A Valid Option","Error",1);   
-                        main();     
-        }                          
-    }
+
+                default:
+                        MessageBox(0,"Please Choose A Valid Option","Error",1);
+                        basic();
+        }
+}
 
 
-    if(i==2)
-    {                                           //Scientific Calculator.
+/***********************************************************************************************************************************************************/
+
+
+void scientific()
+{
         int j;
         float a;
         float x;
@@ -84,7 +115,7 @@ int main()
                 case 1:
                         printf("Enter The Number To Be Squared:\n");
                         scanf("%f", &a);
-                        printf("The Square Of %.2f = %f\n\n", a, (a*a));        
+                        printf("The Square Of %.2f = %f\n\n", a, (a*a));
                         break;
 
                 case 2:
@@ -97,17 +128,17 @@ int main()
                 case 3:
                         printf("Enter The Number To Be Cubed:\n");
                         scanf("%f", &a);
-                        printf("The Cube Of %.2f = %f\n\n", a, (a*a*a));        
+                        printf("The Cube Of %.2f = %f\n\n", a, (a*a*a));
                         break;
 
                 case 4:
                         printf("Enter The Number 'b'(log b):\n");
                         scanf("%lf", &b);
                         result = log(b);
-                        printf("The Natural Log Of %.2lf = %lf\n\n", b, result);        
+                        printf("The Natural Log Of %.2lf = %lf\n\n", b, result);
                         break;
 
-                case 5:        
+                case 5:
                         printf("Enter The Number 'b'(log b):\n");
                         scanf("%lf", &b);
                         result = log10(b);
@@ -118,7 +149,7 @@ int main()
                         printf("Enter The Number 'x' To Be Multiplied With 'π'\n");
                         scanf("%f", &x);
                         printf("The Value Of (%.2f * π) = %f", x, (x*pi));
-                        break;        
+                        break;
 
                 case 7:
                         printf("Enter The Number 'x' To Be Divided By 'π'\n");
@@ -137,9 +168,95 @@ int main()
 
                 default:
                         MessageBox(0,"Please Enter A Valid Option","Error",1);
-                        main();                        
-        }                       
-                            
+                        scientific();
+        }
+}
+
+/*******************************************************************************************************************************************/
+
+void matrix()
+{
+    int matrix1[3][3];      //first matrix
+    int matrix2[3][3];      //second matrix
+    int matrix3[3][3];      //matrix addition
+    int i;             //i=rows
+    int j;             //columns
+
+    /*******************First Matrix************************/
+
+    printf("First Matrix\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("Enter the value of a[%d%d]\n", i+1,j+1);
+            scanf("%d", &matrix1[i][j]);
+
+        }
     }
-    getch();
+
+    printf("First matrix is:-\n");
+
+
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+
+            printf("%d ", matrix1[i][j]);
+        }
+        printf("\n");
+    }
+
+
+    /**********************Second Matrix********************/
+
+    printf("\n");
+    printf("Second Matrix\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("Enter the value of a[%d%d]\n", i+1,j+1);
+            scanf("%d", &matrix2[i][j]);
+
+        }
+    }
+
+    printf("Second matrix is:-\n");
+
+
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+
+            printf("%d ", matrix1[i][j]);
+        }
+        printf("\n");
+    }
+
+    /******************Calculated Matrix***********************/
+
+
+
+
+    printf("Addition Of The Two Matrices Is\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            matrix3[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+
+
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d ", matrix3[i][j]);
+        }
+        printf("\n");
+    }
 }
