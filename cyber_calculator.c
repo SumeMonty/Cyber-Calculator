@@ -6,11 +6,17 @@
 
 int main()
 {
-
     void basic();
     void scientific();
     void matrix();
     int i;
+    char enter;
+    printf("Coded By Sumesh Mohanty\n\n");
+    printf("...Welcome To Cyber-Calculator\n");
+    printf("Press any key to continue");
+    scanf("%c", &enter);
+    printf("\n");
+
     printf("Select A Type Of Calculator:-\n");
 
     printf("1.Basic Calculator('+','-','*','/')\n\n");
@@ -35,6 +41,7 @@ int main()
     {
        matrix();
     }
+
     getch();
 }
 
