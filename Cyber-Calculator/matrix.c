@@ -13,16 +13,20 @@ void main()
     int j;             //columns
     int choice;
     int scalar;
-    char repeat;
 
-    do
+    while(1)
     {
         printf("Enter The Number Of The Option You Want To Choose\n\n");
         printf("1.Matrix Addition and Subtraction\n\n");
         printf("2.Scalar Multiplication On A Matrix\n\n");
+        printf("3.Exit ");
         scanf("%d", &choice);
         system("CLS");
-
+        
+        if (choice==3)
+        {
+            exit(0);
+        }
             /*******************First Matrix************************/           
             printf("Matrix 1....\n");
                 for(i=0;i<3;i++)
@@ -137,10 +141,11 @@ void main()
 
             }
 
-            printf("Wanna Use Matrix Calculator Again?? (Y/N) ");
-            scanf("%c", &repeat); 
+            
 
-    }while(repeat=='y');        
+            printf("\n\n");
+                        
+    }        
 
     getch();
 }
