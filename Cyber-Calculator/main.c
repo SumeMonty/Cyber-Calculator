@@ -8,9 +8,9 @@
 int main()
 { 
 
+
    int i;
    char enter;
-   char repeat;
 
    printf(
 " .d8888b.           888                             .d8888b.           888                   888          888\n"
@@ -31,7 +31,7 @@ int main()
    scanf("%c", &enter);
    system("CLS");
 
-   do
+   while(1)
    {
       printf("Select A Type Of Calculator:-\n\n");
       printf("Choose A Number From The Following\n\n");
@@ -42,7 +42,12 @@ int main()
 
       printf("3.Matrix Calculator\n\n");
 
-      printf("4.Table Calculator ");
+      printf("4.Table Calculator\n\n");
+
+      printf("5.Financial Calculator\n\n");
+
+      printf("6.Exit ");
+
       scanf("%d", &i);
 
       if(i==1)
@@ -69,15 +74,25 @@ int main()
          system("CLS");
          system("table");
       }
-      else
+
+      else if(i==5)
       {
-         MessageBox(0,"Incorrect Choice\nTerminating...!!!!","Error",1);
+         system("CLS");
       }
 
-      printf("Wanna Use Cyber-Calculator Again?? (Y/N) ");
-      scanf("%c", &repeat);
-  
-   }while(repeat=='y');    
+      else if(i==6)
+      {
+         exit(0);
+      }
 
-   getch();
+      else
+      {
+         system("CLS");
+         MessageBox(0,"Incorrect Choice\nStarting Again...!!!!","Error",1);
+         
+      }
+  
+   }
+
+   return 0;
 }
