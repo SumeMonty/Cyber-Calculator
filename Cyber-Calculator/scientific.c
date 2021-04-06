@@ -90,17 +90,11 @@ void main()
                         case 9:
                                 exit(0);
                                 break;     
-
-                        case 10: 
-                                 MessageBeep(UINT (uType);           
-
+                                
                         default:
                                 MessageBox(0,"Please Enter A Valid Option","Error",1);
                                 system("scientific");
                 }
-
-               printf("Hello");
-
         }
 
 
