@@ -8,15 +8,15 @@ void main()
 {
         int i;
         int a, b;
-        char repeat;
 
-        do
+        while(1)
         {
                 printf("Enter The Number Of The Option You Want To Choose\n\n");
                 printf("1.Addition Of Two Integers\n");
                 printf("2.Subtraction Between Two Integers\n");
                 printf("3.Multiplication Between Two Integers\n");
-                printf("4.Division Of Two Integers ");
+                printf("4.Division Of Two Integers\n\n");
+                printf("5.Exit ");
                 scanf("%d", &i);
                 system("CLS");
 
@@ -46,16 +46,16 @@ void main()
                                 printf("\nRemainder=%d\n", (a%b));
                                 break;
 
+                        case 5:
+                                exit(0);        
+
                         default:
                                 MessageBox(0,"Please Choose A Valid Option","Error",1);
                                 system("basic");
                 }
+        }
 
-
-                printf("Wanna Use Basic Calculator Again?? (Y/N) ");
-                scanf("%c", &repeat); 
-
-        }while(repeat=='y')        
+ 
 
         getch();
 }
