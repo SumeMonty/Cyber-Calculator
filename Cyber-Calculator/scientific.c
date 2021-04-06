@@ -2,6 +2,7 @@
 #include<conio.h>
 #include<math.h>
 #include<windows.h>
+#include<winuser.h>
 #include<stdlib.h>
 #define pi 22/7
 
@@ -15,7 +16,7 @@ void main()
         double result;
         char repeat;
 
-        do
+        while(1)
         {
                 printf("Enter The Number Of The Option You Want To Choose\n\n");
                 printf("1.Finding The Square Of An Number\n\n");
@@ -25,7 +26,8 @@ void main()
                 printf("5.Finding The Common Log Of A Number(Base = '10')\n\n");
                 printf("6.Multiplication Of A Number 'x' With 'pi(22/7)'....'x*(22/7)'\n\n");
                 printf("7.Division Of A Number 'x' By 'pi(22/7)'....'x/(22/7)'\n\n");
-                printf("8.Find The Value Of A Number Raised To The Power Of Another ");
+                printf("8.Find The Value Of A Number Raised To The Power Of Another\n\n");
+                printf("9.Exit ");
                 scanf("%d", &j);
 
                 switch(j)
@@ -85,15 +87,21 @@ void main()
                                 printf("The Value Of %.2lf Raised To To The Power Of %.2lf = %.2lf", base, power, result);
                                 break;
 
+                        case 9:
+                                exit(0);
+                                break;     
+
+                        case 10: 
+                                 MessageBeep(UINT (uType);           
+
                         default:
                                 MessageBox(0,"Please Enter A Valid Option","Error",1);
                                 system("scientific");
                 }
 
-               printf("Wanna Use Scientific Calculator Again?? (Y/N) ");
-               scanf("%c", &repeat); 
+               printf("Hello");
 
-        }while(repeat=='y');
+        }
 
 
      getch();
