@@ -1,6 +1,5 @@
-//C program to print multiplication tables of a given number.
-
 #include<stdio.h>
+#include<stdlib.h>
 
 int main()
 {
@@ -8,21 +7,27 @@ int main()
     int i;
     char repeat;
 
-    do
+    while(1)
     {    
-    printf("Enter a number:");
+    printf("Enter a number to print table: [Enter (0) to exit]\n");
     scanf("%d", &a);
+
+    if (a==0)
+    {
+        exit(0);
+    }
+    
 
     for(i=1;i<=10;i++)
     {
         printf("\n%d x %d = %d", a,i,(a*i));
     }
-
-    printf("Wanna Use Table Calculator Again?? (Y/N) ");
-    scanf("%c", &repeat);
     
-    }while(repeat=='y');
+    printf("\n\n");
+
+    }
     
     
     return 0;
 }
+
