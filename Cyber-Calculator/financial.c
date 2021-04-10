@@ -31,7 +31,7 @@ int main()
                     printf("Enter Time Period: ");
                     scanf("%f", &T);
                     printf("Enter Rate of Interest: ");
-                    scanf("%f", &R);
+                    scanf("%f", &R);  
                     SI=(P*T*R)/100;
                     printf("Simple Interest = %f", SI);
                     break;
