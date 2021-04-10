@@ -33,8 +33,8 @@ int main()
 
    while(1)
    {
-      printf("Select A Type Of Calculator:-\n\n");
-      printf("Choose A Number From The Following\n\n");
+      printf("Select A Type Of Calculator\n\n");
+      printf("Choose A Number From The Following[Enter 0 To Exit]\n\n");
 
       printf("1.Basic Calculator\n\n");
 
@@ -46,43 +46,50 @@ int main()
 
       printf("5.Financial Calculator\n\n");
 
-      printf("6.Exit ");
+      printf("6.Factorial Calculator ");
 
       scanf("%d", &i);
-
+      
+      if(i==0)
+      {
+         exit(0);
+      }
+      
       if(i==1)
       {                           //Basic Calculator
          system("CLS");
-         system("basic");
+         system("gcc basic.c -o basic && basic");
       }
 
 
       else if(i==2)
       {                           //Scientific Calculator.
          system("CLS");
-         system("scientific");
+         system("gcc scientific.c -o scientific && scientific");
       }
 
       else if(i==3)
       {                           //Matrix Calculator        
          system("CLS");
-         system("matrix");
+         system("gcc matrix.c -o matrix && matrix");
       }
 
       else if(i==4)
       {
          system("CLS");
-         system("table");
+         system("gcc table.c -o table && table");
       }
 
       else if(i==5)
       {
          system("CLS");
+         system("gcc financial.c -o financial && financial");
       }
 
       else if(i==6)
       {
-         exit(0);
+         system("CLS");
+         system("gcc factorial.c -o factorial && factorial");
       }
 
       else
