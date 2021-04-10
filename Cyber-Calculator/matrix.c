@@ -13,7 +13,7 @@ void main()
     int j;             //columns
     int choice;
     int scalar;
-
+ 
     while(1)
     {
         printf("Enter The Number Of The Option You Want To Choose\n\n");
