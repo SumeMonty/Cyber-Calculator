@@ -6,7 +6,7 @@ int main()
     int a;
     int i;
     char repeat;
-    
+     
     
     
     while(1)
