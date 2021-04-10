@@ -11,7 +11,7 @@ void main()
         int j;
         float a;
         float x;
-        double b;
+        double b; 
         double base, power;
         double result;
         char repeat;
