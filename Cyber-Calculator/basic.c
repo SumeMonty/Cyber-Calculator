@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<math.h>
 #include<windows.h>
-#include<stdlib.h>
+#include<stdlib.h> 
 
 void main()
 {
