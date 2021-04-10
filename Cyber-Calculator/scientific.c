@@ -4,7 +4,7 @@
 #include<windows.h>
 #include<winuser.h>
 #include<stdlib.h>
-#define pi 22/7
+#define pi 22/7 
 
 void main()
 {
