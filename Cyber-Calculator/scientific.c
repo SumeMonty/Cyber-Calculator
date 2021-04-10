@@ -17,8 +17,8 @@ void main()
         char repeat;
 
         while(1)
-        {
-                printf("Enter The Number Of The Option You Want To Choose\n\n");
+        {        
+                printf("Enter The Number Of The Option You Want To Choose[Enter 0 To Exit]\n\n");
                 printf("1.Finding The Square Of An Number\n\n");
                 printf("2.Finding The Square Root Of A Number\n\n");
                 printf("3.Finding The Cube Of An Number\n\n");
@@ -26,9 +26,13 @@ void main()
                 printf("5.Finding The Common Log Of A Number(Base = '10')\n\n");
                 printf("6.Multiplication Of A Number 'x' With 'pi(22/7)'....'x*(22/7)'\n\n");
                 printf("7.Division Of A Number 'x' By 'pi(22/7)'....'x/(22/7)'\n\n");
-                printf("8.Find The Value Of A Number Raised To The Power Of Another\n\n");
-                printf("9.Exit ");
+                printf("8.Find The Value Of A Number Raised To The Power Of Another ");
                 scanf("%d", &j);
+
+                if(j==0)
+                {
+                    exit(0);
+                }
 
                 switch(j)
                 {
@@ -85,16 +89,15 @@ void main()
                                 scanf("%lf", &power);
                                 result = pow(base,power);
                                 printf("The Value Of %.2lf Raised To To The Power Of %.2lf = %.2lf", base, power, result);
-                                break;
+                                break;                
 
-                        case 9:
-                                exit(0);
-                                break;     
-                                
                         default:
                                 MessageBox(0,"Please Enter A Valid Option","Error",1);
                                 system("scientific");
                 }
+                
+                printf("\n\n\n\n");
+
         }
 
 
