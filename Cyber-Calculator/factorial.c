@@ -3,24 +3,29 @@
            For example, the factorial of 3 is (3 * 2 * 1 = 6)*/ 
 
 #include<stdio.h>
+#include<stdlib.h>
 
 int main()
 {
 	int N;
 	int i, fact;
+	
+	
+		printf("Enter the value of N:");
+		scanf("%d", &N);
 
-	printf("Enter the value of N:");
-	scanf("%d", &N);
-
-	i=1;
-	fact=1;
-
-	while(i<=N)
-	{
-		fact=fact*i;
-		i++;
-	}
-
-	printf("Factorial of %d is %d", N, fact);
+		i=1;
+		fact=1;
+		
+		while(i<=N)
+		{
+			fact=fact*i;
+			i++;
+		}
+	
+	
+		printf("Factorial of %d is %d\n\n", N, fact);
+	
+	
 	return 0;
 }
