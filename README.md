@@ -1,8 +1,10 @@
 # Cyber-Calculator  
 
-A simple but very powerful Calculator created for windows. 
+**A simple but very powerful Calculator created for windows.** 
 
-Cyber-Calculator consists of:
+![image](https://user-images.githubusercontent.com/80830020/126226521-663d837a-5e7c-40eb-86d4-19708266250a.png)
+
+## Cyber-Calculator consists of:
 
 * Basic Calculator (+, -, *, /)  
 * Scientific Calculator  
@@ -12,7 +14,9 @@ Cyber-Calculator consists of:
 * Factorial Calculator  
 * Binary Calculator  
 
-Requirements:
+![image](https://user-images.githubusercontent.com/80830020/126228635-8c7695f2-0468-40cf-8666-60e6357c96bc.png)
+
+## Requirements:
 
 For Running **Cyber-Calculator** on your system you need to have **GCC** installed on your system
 
