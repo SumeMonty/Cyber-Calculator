@@ -1,2 +1,3 @@
 # Cyber-Calculator
-This repository is the official data house for my project 'Cyber-Calculator'.
+A simple but very powerful Calculator created for windows. 
+
