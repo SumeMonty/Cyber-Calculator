@@ -12,9 +12,13 @@
 * Table Calculator  
 * Financial Calculator  
 * Factorial Calculator  
-* Binary Calculator  
+* Binary Calculator 
 
-![image](https://user-images.githubusercontent.com/80830020/126228635-8c7695f2-0468-40cf-8666-60e6357c96bc.png)
+![image](https://user-images.githubusercontent.com/80830020/126229440-d38723d4-b25b-4fed-a2ff-178bdd925d84.png)
+
+<!-- ![image](https://user-images.githubusercontent.com/80830020/126229154-1a31732b-b2ee-4f0f-bbec-bb91e184c77b.png) -->
+
+<!-- ![image](https://user-images.githubusercontent.com/80830020/126228635-8c7695f2-0468-40cf-8666-60e6357c96bc.png) -->
 
 ## Requirements:
 
