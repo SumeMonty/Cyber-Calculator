@@ -40,7 +40,9 @@ Visit The [GCC Website](http://mingw-w64.org/doku.php/download) and download the
 Running **Cyber-Calculator** is as simple as a click or two!
 
 >To run **Cyber-Calculator** there are 2 ways:-
+>
 >> Open the batch file in the **Cyber-Calculator** directory.
+>
 >> The second method is useful if there is any technical error while opening the batch file.
 For this method, just open a terminal window [Powershell Recommended] and type the following command and hit 'Enter'.
 
