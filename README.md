@@ -46,11 +46,8 @@
 For this method, just open a terminal window **[Powershell Recommended]** and type the following command and hit 'Enter'.
 
 ```
-
 ./main
-
 ```
-
 
 
 
