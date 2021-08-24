@@ -43,7 +43,10 @@
     * Open the batch file in the **Cyber-Calculator** directory.
 
     * The second method is useful if there is any technical error while opening the batch file.<br>
-For this method, just open a terminal window [Powershell Recommended] and type the following command and hit 'Enter'.
+For this method, just open a terminal window **[Powershell Recommended]** and type the following command and hit 'Enter'.
+```
+./main
+```
 
 
 
