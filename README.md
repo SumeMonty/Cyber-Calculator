@@ -1,6 +1,6 @@
 # Cyber-Calculator  
 
-**A simple but very powerful Calculator created for windows.** 
+**A simple but very powerful Calculator created for windows.**
 
 <!-- ![image](https://user-images.githubusercontent.com/80830020/126226521-663d837a-5e7c-40eb-86d4-19708266250a.png) -->
 ![image](https://user-images.githubusercontent.com/80830020/126306613-d980fc83-04b4-43af-b8cf-0f40d43b7eea.png)
@@ -19,7 +19,7 @@
 * Table Calculations  
 * Financial Calculations  
 * Factorial Calculations  
-* Binary Calculations 
+* Binary Calculations
 
 <!-- ![image](https://user-images.githubusercontent.com/80830020/126229440-d38723d4-b25b-4fed-a2ff-178bdd925d84.png) -->
 ![image](https://user-images.githubusercontent.com/80830020/126306733-c9893971-7873-4941-b09a-b4813fb647d2.png)
@@ -34,6 +34,17 @@
 For Running **Cyber-Calculator** on your system you need to have **GCC** installed on your system
 
 Visit The [GCC Website](http://mingw-w64.org/doku.php/download) and download the setup file which says **MingW-W64-builds** for Windows.  
+
+## How To Run?
+
+Running **Cyber-Calculator** is as simple as a click or two!
+
+To run **Cyber-Calculator** there are 2 ways:-
+> Open the batch file in the **Cyber-Calculator** directory.
+> The second method is useful if there is any technical error while opening the batch file.
+For this method, just open a terminal window [Powershell Recommended] and type the following command and hit 'Enter'.
+
+
 
 
 
