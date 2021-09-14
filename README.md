@@ -15,10 +15,11 @@
 * Table Calculations  
 * Financial Calculations  
 * Factorial Calculations  
-* Binary Calculations
+* Number System Calculations
 
 <!-- ![image](https://user-images.githubusercontent.com/80830020/126229440-d38723d4-b25b-4fed-a2ff-178bdd925d84.png) -->
-![image](https://user-images.githubusercontent.com/80830020/126306733-c9893971-7873-4941-b09a-b4813fb647d2.png)
+<!-- ![image](https://user-images.githubusercontent.com/80830020/126306733-c9893971-7873-4941-b09a-b4813fb647d2.png) -->
+![Screenshot 2021-09-14 144803](https://user-images.githubusercontent.com/80830020/133231702-12da42a7-2d69-48e4-a509-db06f7813101.png)
 
 
 <!-- ![image](https://user-images.githubusercontent.com/80830020/126229154-1a31732b-b2ee-4f0f-bbec-bb91e184c77b.png) -->
