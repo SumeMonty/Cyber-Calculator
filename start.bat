@@ -1,3 +1,3 @@
-start /max main.exe
+start /max Exe/main.exe
 cls
 exit
