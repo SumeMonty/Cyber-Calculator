@@ -1,6 +1,7 @@
 # Cyber-Calculator  
 
-**A simple but very powerful Calculator created for windows.**
+## **A simple but very powerful Calculator created for windows.**
+## You Can Install The Latest Version From [SumeMonty/Cyber-Calculator/releases/](https://github.com/SumeMonty/Cyber-Calculator/releases/)
 
 
 <!-- ![image](https://user-images.githubusercontent.com/80830020/126226521-663d837a-5e7c-40eb-86d4-19708266250a.png) -->
